@@ -65,7 +65,7 @@ function App() {
         <input
           value={weight}
           type="text"
-          placeholder="e.g: 125 lbs"
+          placeholder="e.g: 198 lbs"
           onChange={(e) => setWeight(e.target.value)}
         />
 
