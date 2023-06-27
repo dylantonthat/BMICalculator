@@ -12,12 +12,17 @@ function App() {
   const [bmi, setBmi] = useState("");
   const [message, setMessage] = useState("");
 
-  
-  function calcBmi()
-  {
+  function calcBmi() {
     const re = /^\d+(\.\d+)?$/; // regex match pattern to verify integers, floats (ex. 432, 0.5, 3.14)
-                                                                              // if one of the inputs is not numerical
-    if ( weight === "" || feetHeight === "" || inchesHeight === "" || !re.test(weight) || !re.test(feetHeight) || !re.test(inchesHeight)) {
+    // if one of the inputs is not numerical
+    if (
+      weight === "" ||
+      feetHeight === "" ||
+      inchesHeight === "" ||
+      !re.test(weight) ||
+      !re.test(feetHeight) ||
+      !re.test(inchesHeight)
+    ) {
       alert("Please enter a valid weight and/or height.");
     } else {
       const totalHeight =
@@ -79,17 +84,13 @@ function App() {
           placeholder="e.g: 8 in"
           onChange={(e) => setInchesHeight(e.target.value)}
         />
-        
-        <button onClick={calcBmi}>Calculate</button>
 
+        <button onClick={calcBmi}>Calculate</button>
 
         <h2>BMI: {bmi}</h2>
         <h5>{message}</h5>
         <footer className="mt-5">Dylan Ton-That © 2023</footer>
-
       </div>
-
-      
     </div>
   );
 }
