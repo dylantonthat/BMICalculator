@@ -22,9 +22,11 @@ function App() {
       !re.test(weight) ||
       !re.test(feetHeight) ||
       !re.test(inchesHeight)
-    ) {
-      alert("Please enter a valid weight and/or height.");
-    } else {
+    )
+    { alert("Please enter a valid weight and/or height."); }
+
+    else
+    {
       const totalHeight =
         parseFloat(feetHeight) * 12 + parseFloat(inchesHeight);
       const bmi = (703 * weight) / (totalHeight * totalHeight);
