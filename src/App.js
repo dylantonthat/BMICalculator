@@ -81,7 +81,7 @@ function App() {
         <input
           value={inchesHeight}
           type="text"
-          placeholder="e.g: 8 in"
+          placeholder="e.g: 9 in"
           onChange={(e) => setInchesHeight(e.target.value)}
         />
 
