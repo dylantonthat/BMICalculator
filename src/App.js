@@ -10,7 +10,7 @@ function App() {
   const [inchesHeight, setInchesHeight] = useState("");
 
   const [bmi, setBmi] = useState("");
-  const [message, setMessage] = useState("");
+  const [message, setMessage] = useState("N/A");
 
   function calcBmi() {
     const re = /^\d+(\.\d+)?$/; // regex match pattern to verify integers, floats (ex. 432, 0.5, 3.14)
@@ -57,7 +57,7 @@ function App() {
   return (
     <div className="app">
       <div className="body">
-        <h1 className="mb-3">Compute Body Mass Index</h1>
+        <h1 className="mb-3">Body Mass Index Calculator</h1>
 
         <h4>
           Weight <span>(lbs)</span>:
@@ -85,7 +85,7 @@ function App() {
           onChange={(e) => setInchesHeight(e.target.value)}
         />
 
-        <button onClick={calcBmi}>Calculate</button>
+        <button onClick={calcBmi}>Compute</button>
 
         <h2>BMI: {bmi}</h2>
         <h5>{message}</h5>
