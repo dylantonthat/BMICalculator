@@ -10,7 +10,7 @@ function App() {
   const [inchesHeight, setInchesHeight] = useState("");
 
   const [bmi, setBmi] = useState("");
-  const [message, setMessage] = useState("N/A.");
+  const [message, setMessage] = useState("N/A");
 
   function calcBmi() {
     const re = /^\d+(\.\d+)?$/; // regex match pattern to verify integers, floats (ex. 432, 0.5, 3.14)
