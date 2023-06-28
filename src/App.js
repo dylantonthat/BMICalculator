@@ -14,7 +14,8 @@ function App() {
 
   function calcBmi() {
     const re = /^\d+(\.\d+)?$/; // regex match pattern to verify integers, floats (ex. 432, 0.5, 3.14)
-    // if one of the inputs is not numerical
+
+    // if any input box is left blank or does not contain a numerical string
     if (
       weight === "" ||
       feetHeight === "" ||
@@ -80,12 +81,17 @@ function App() {
         <input
           value={feetHeight}
           type="text"
+          min = "1"
+          max = "7"
           placeholder="e.g: 5 ft"
           onChange={(e) => setFeetHeight(e.target.value)}
         />
+        
         <input
           value={inchesHeight}
           type="text"
+          min = "1"
+          max = "12"
           placeholder="e.g: 9 in"
           onChange={(e) => setInchesHeight(e.target.value)}
         />
