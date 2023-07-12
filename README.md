@@ -1,6 +1,6 @@
 # Body Mass Index Calculator
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This web app allows the user to input his/her (imperical) weight and height to retrieve their respective BMI and weight category. \
+Bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
