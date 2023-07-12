@@ -28,8 +28,7 @@ function App() {
 
     else
     {
-      const totalHeight =
-        parseFloat(feetHeight) * 12 + parseFloat(inchesHeight);
+      const totalHeight = parseFloat(feetHeight) * 12 + parseFloat(inchesHeight);
       const bmi = (703 * weight) / (totalHeight * totalHeight);
 
       //returns value to the hundredths place
